@@ -11,7 +11,7 @@ Apart from this it will also show courses progress, provide useful resources , a
 QnA.
 }
 
-Tech Geekz website should include a mix of the following:
+### Tech Geekz website should include a mix of the following:
 
 1.A Home Page with recently viewed and opted courses.
 2.A profile page with necessary details about the user.
