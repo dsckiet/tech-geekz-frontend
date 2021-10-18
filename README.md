@@ -1,24 +1,26 @@
 # What is the project?
 
-## A TRAVELLING WEBSITE.. 
+## Tech Geekz.. 
 
 { 
-A website and an android app which will provide information to the users about specific tourists places. Information like tranposrtation cost from going to point A to B in that city/destination, means of available transports, popular/high rated restaurants/hotels. It will also contain blogs from different people who have already travelled to that place. 
+Tech Geekz is a user friendly website which aims on helping young aspirants, by providing the with the best rated and reviewed courses from 
+world's best sites. It also helps aspirants to grow their skill by following their favorite courses , and covers many top skills required by MNC's
+in this fast growing tech world.
 
-Apart from this it will also show, Trending places, Places by Category (ex: Hillstation, beach) and Places by various activities (ex: Paragliding, trekking)
+Apart from this it will also show courses progress, provide useful resources , and also help to solve doubts using 
+QnA.
 }
 
-The travel website should include a mix of the following:
+Tech Geekz website should include a mix of the following:
 
-1.A brief summary of the area, with highlights of important places
-2.Popular Restaurants & Hotel recommendations with web links to hotel and   booking sites
-3.Information about recreation and outdoor activities
-4.Guides to arts and culture, including museums, theaters, and other     attractions
-5.Packing tips.
-6.Maps and guides
-7.Public transport information
-8.Nearest Airport/Railway station information
-9.Relevant tips on language and local dialect.
+1.A Home Page with recently viewed and opted courses.
+2.A profile page with necessary details about the user.
+3.A courses section showing multiple courses.
+4.A progress page showing progress of your courses.
+5.A QnA section to solve the queries.
+6.A Resource section providing links and roadmaps.
+7.Help, Contact Us page for any doubts.
+
 
 
 ## REQUIREMENT:-
@@ -33,7 +35,7 @@ Frontend - REACT.JS, TAILWINDCSS
 
 ## How to contribute?
 
-1.Comment on the issue on which you want work, also mention the     changes/additions you are willing to make.
+1.Comment on the issue on which you want work, also mention the changes/additions you are willing to make.
 
 2.Wait for the issue to be assigned to you.
 
