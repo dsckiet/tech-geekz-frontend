@@ -13,13 +13,13 @@ QnA.
 
 ### Tech Geekz website should include a mix of the following:
 
-1.A Home Page with recently viewed and opted courses.
-2.A profile page with necessary details about the user.
-3.A courses section showing multiple courses.
-4.A progress page showing progress of your courses.
-5.A QnA section to solve the queries.
-6.A Resource section providing links and roadmaps.
-7.Help, Contact Us page for any doubts.
+1. A Home Page with recently viewed and opted courses.
+2. A profile page with necessary details about the user.
+3. A courses section showing multiple courses.
+4. A progress page showing progress of your courses.
+5. A QnA section to solve the queries.
+6. A Resource section providing links and roadmaps.
+7. Help, Contact Us page for any doubts.
 
 
 
