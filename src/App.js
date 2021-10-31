@@ -1,9 +1,24 @@
 import "./assets/main.css";
 import React from "react";
 import NavBar from "./components/NavBar";
+import progress from "./components/Progress";
+import Qna from "./components/Qna";
+import courses from "./components/Courses";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 function App() {
-  return <NavBar />;
+  return (
+    <div>
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/" component={NavBar} />
+          <Route exact path="/courses" component={courses} />
+          <Route exact path="/progress" component={progress} />
+          <Route exact path="/Qna" component={Qna} />
+        </Switch>
+      </BrowserRouter>
+    </div>
+  );
 }
 
 export default App;
