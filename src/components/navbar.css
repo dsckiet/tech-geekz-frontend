@@ -1,0 +1,30 @@
+.navbar {
+  background-color: #f9f9fa;
+}
+
+.profile-dropdown {
+  background-color: #053063;
+  /* height: 30px; */
+  border-radius: 30px;
+  margin: 0 2rem;
+}
+
+.profile {
+  /* background-color: #053063; */
+  color: white;
+  margin: 3px;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  background-color: whitesmoke;
+  margin: 3px;
+  border-radius: 50px;
+}
+
+.icon {
+  margin: 3px;
+  padding: 4px;
+  color: #f9f9fa;
+}

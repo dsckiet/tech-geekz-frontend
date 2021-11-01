@@ -1,11 +1,12 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import "./navbar.css";
 
 function NavBar() {
   return (
-    <div className="p-3.5 w-full h-15 bg-gray-50 shadow-md flex justify-between">
+    <nav className="p-3 w-full h-15 shadow-md flex justify-between navbar">
       <div className="bg-blue-500">LOGO</div>
-      <nav className="pl-96">
+      <div className="pl-96">
         <NavLink exact to="/" className="text-2xl px-7">
           Home
         </NavLink>
@@ -21,9 +22,13 @@ function NavBar() {
         <NavLink exact to="/Qna" className="text-2xl px-7">
           Qna
         </NavLink>
-      </nav>
-      <div className="text-2xl bg-blue-300 rounded-full">profile</div>
-    </div>
+      </div>
+      <div className=" profile-dropdown flex">
+        <div className="circle"></div>
+        <div className="text-m profile">profile</div>
+        <i class="fas fa-sort-down fa-lg icon"></i>
+      </div>
+    </nav>
   );
 }
 
