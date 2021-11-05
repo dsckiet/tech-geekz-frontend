@@ -1,6 +1,7 @@
 import "./assets/main.css";
 import React from "react";
 import NavBar from "./components/NavBar";
+// import Footer from "./components/Footer";
 import progress from "./components/Progress";
 import Qna from "./components/Qna";
 import courses from "./components/Courses";
