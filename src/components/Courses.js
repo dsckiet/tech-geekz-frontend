@@ -10,7 +10,7 @@ const Courses = () => {
     <>
       <NavBar />
       <div>
-        <div className="m-2 filter">
+        <div className="p-2 filter">
           <div className="search">
             <input
               className="py-2 px-5 input"
@@ -28,54 +28,60 @@ const Courses = () => {
               <h2 className="categ">Categories</h2>
               <div className="categorySearch">
                 <input
-                  className="py-2 px-5 inputCateg"
+                  className="py-2 px-10 inputCateg"
                   type="text"
                   placeholder="Search Category"
                   onChange={(e) => {
                     setSeacrhTerm(e.target.value);
                   }}
                 />
-                <i className="fas fa-search fa-lg searchicon"></i>
-                <i class="fas fa-chevron-up"></i>
+                <i className="fas fa-search fa-lg searchiconCat"></i>
+                <i class="fas fa-chevron-up upArr"></i>
               </div>
-              <div>
-                <input type="checkbox" />
-                <label>Javascript</label>
+              <div className="category">
+                <input type="checkbox" className="checkboxIn" />
+                <label className="CatName">Javascript</label>
               </div>
-              <div>
-                <input type="checkbox" />
-                <label>Javascript</label>
+              <div className="category">
+                <input type="checkbox" className="checkboxIn" />
+                <label className="CatName">Javascript</label>
               </div>
-              <div>
-                <input type="checkbox" />
-                <label>Javascript</label>
+              <div className="category">
+                <input type="checkbox" className="checkboxIn" />
+                <label className="CatName">Javascript</label>
+              </div>
+              <div className="showMore">
+                <h1 className="mx-8 more">more ...</h1>
               </div>
             </div>
             <div>
               <h2 className="categ">Categories</h2>
               <div className="categorySearch">
                 <input
-                  className="py-2 px-5 inputCateg"
+                  className="py-2 px-10 inputCateg"
                   type="text"
                   placeholder="Search Category"
                   onChange={(e) => {
                     setSeacrhTerm(e.target.value);
                   }}
                 />
-                <i className="fas fa-search fa-lg searchicon"></i>
-                <i class="fas fa-chevron-up"></i>
+                <i className="fas fa-search fa-lg searchiconCat"></i>
+                <i class="fas fa-chevron-up upArr"></i>
               </div>
-              <div>
-                <input type="checkbox" />
-                <label>Javascript</label>
+              <div className="category">
+                <input type="checkbox" className="checkboxIn" />
+                <label className="CatName">Javascript</label>
               </div>
-              <div>
-                <input type="checkbox" />
-                <label>Javascript</label>
+              <div className="category">
+                <input type="checkbox" className="checkboxIn" />
+                <label className="CatName">Javascript</label>
               </div>
-              <div>
-                <input type="checkbox" />
-                <label>Javascript</label>
+              <div className="category">
+                <input type="checkbox" className="checkboxIn" />
+                <label className="CatName">Javascript</label>
+              </div>
+              <div className="showMore">
+                <h1 className="mx-8 more">more ...</h1>
               </div>
             </div>
           </div>
