@@ -86,6 +86,9 @@ const Courses = () => {
             </div>
           </div>
         </div>
+        <div>
+          <h1>cvhyf</h1>
+        </div>
       </div>
       <Footer />
     </>
