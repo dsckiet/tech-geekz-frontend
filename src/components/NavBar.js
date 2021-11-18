@@ -6,11 +6,23 @@ import { useState } from "react";
 
 function NavBar() {
   const [dropdown, setDropdown] = useState(false);
+  const [sidebar, setSidebar] = useState(false);
+
+  const showSidebar = (e) => {
+    setSidebar(!sidebar);
+  };
 
   return (
     <>
       <nav className="navbar flex">
-        <i class="fas fa-bars Hamburger"></i>
+        {sidebar ? (
+          <i
+            class="fas fa-times fa-lg Hamburger"
+            onClick={(e) => showSidebar(e)}
+          ></i>
+        ) : (
+          <i class="fas fa-bars Hamburger" onClick={(e) => showSidebar(e)}></i>
+        )}
         <h1>LOGO</h1>
         <div
           className="profile-dropdown flex"
@@ -46,6 +58,20 @@ function NavBar() {
           </div>
         </div>
       </nav>
+      <div className={sidebar ? "flex flex-col sidebar" : "sidebarHide"}>
+        <NavLink exact to="/" className="text-2xl">
+          Home
+        </NavLink>
+        <NavLink exact to="/courses" className="text-2xl">
+          Courses
+        </NavLink>
+        <NavLink exact to="/progress" className="text-2xl">
+          Progress
+        </NavLink>
+        <NavLink exact to="/Qna" className="text-2xl">
+          Qna
+        </NavLink>
+      </div>
     </>
   );
 }

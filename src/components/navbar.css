@@ -2,6 +2,7 @@
   background-color: #f9f9fa;
   justify-content: space-between;
   padding: 0.3rem;
+  z-index: 3;
 }
 
 .profile-dropdown {
@@ -57,5 +58,21 @@
 }
 
 .hide-dropdown {
+  display: none;
+}
+
+.sidebar {
+  background-color: #053063;
+  color: #f9f9fa;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  height: 100vh;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.sidebarHide {
   display: none;
 }
