@@ -15,9 +15,15 @@ const Courses = () => {
   return (
     <>
       <NavBar />
-      <button onClick={(e) => showFilter(e)}>Filters</button>
+      <button
+        className={filter ? "hideFilter" : ""}
+        onClick={(e) => showFilter(e)}
+      >
+        Filters
+      </button>
       <div className={filter ? "filter" : "hideFilter"}>
         <div>
+          <i class="fas fa-times fa-lg" onClick={(e) => showFilter(e)}></i>
           <h1 className="filt">Filters</h1>
           <h2 className="categ">Categories</h2>
           <div className="categorySearch">
@@ -77,6 +83,18 @@ const Courses = () => {
           <div className="showMore">
             <h1 className="mx-8 more">more ...</h1>
           </div>
+        </div>
+      </div>
+      <div className="courses">
+        <div>
+          <input
+            type="text"
+            placeholder="Search Learning"
+            onChange={(e) => {
+              setSeacrhTerm(e.target.value);
+            }}
+          />
+          <i className="fas fa-search fa-md searchicon"></i>
         </div>
       </div>
       <Footer />
