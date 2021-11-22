@@ -5,6 +5,7 @@ import NavBar from "./components/NavBar";
 import progress from "./components/Progress";
 import Qna from "./components/Qna";
 import courses from "./components/Courses";
+import Enroll from "./components/Enroll";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route exact path="/courses" component={courses} />
           <Route exact path="/progress" component={progress} />
           <Route exact path="/Qna" component={Qna} />
+          <Route exact path="/enroll" component={Enroll} />
         </Switch>
       </BrowserRouter>
     </div>

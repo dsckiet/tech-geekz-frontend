@@ -2,7 +2,9 @@ import React from "react";
 import Footer from "./Footer";
 import NavBar from "./NavBar";
 import { useState } from "react";
+import img2 from "./img2.jpg";
 import "./courses.css";
+import { Link } from "react-router-dom";
 
 const Courses = () => {
   const [searchTerm, setSeacrhTerm] = useState("");
@@ -95,6 +97,17 @@ const Courses = () => {
             }}
           />
           <i className="fas fa-search fa-md searchicon"></i>
+        </div>
+        <div>
+          <div>
+            <img src={img2}></img>
+            <h1>Bootcamp on Python(from Scratch) for Beginners.</h1>
+            <h3>Category : Programming (Udemy)</h3>
+            <button>
+              <Link to="/enroll">Add Course</Link>
+            </button>
+            <span> 5 :</span>
+          </div>
         </div>
       </div>
       <Footer />
