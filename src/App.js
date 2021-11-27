@@ -7,6 +7,7 @@ import Qna from "./components/Qna";
 import courses from "./components/Courses";
 import Enroll from "./components/Enroll";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+import progressWatch from "./components/ProgressWatch";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route exact path="/progress" component={progress} />
           <Route exact path="/Qna" component={Qna} />
           <Route exact path="/enroll" component={Enroll} />
+          <Route exact path="/progressWatch" component={progressWatch} />
         </Switch>
       </BrowserRouter>
     </div>
