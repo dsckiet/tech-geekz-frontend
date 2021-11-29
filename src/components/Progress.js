@@ -18,6 +18,7 @@ const progress = () => {
               <label>
                 Completion: <span>70%</span>
               </label>
+              <progress value="70" max="100"></progress>
             </div>
           </div>
         </div>
