@@ -33,7 +33,7 @@ function NavBar() {
           <i
             class={
               dropdown
-                ? "fas fa-sort-down fa-md icon rotate-180"
+                ? "fas fa-sort-down fa-md icon"
                 : "fas fa-sort-down fa-md icon"
             }
           ></i>

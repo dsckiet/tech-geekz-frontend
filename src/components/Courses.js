@@ -16,101 +16,113 @@ const Courses = () => {
 
   return (
     <>
-      <NavBar />
-      <button
-        className={filter ? "hideFilter" : ""}
-        onClick={(e) => showFilter(e)}
-      >
-        Filters
-      </button>
-      <div className={filter ? "filter" : "hideFilter"}>
-        <div>
-          <i class="fas fa-times fa-lg" onClick={(e) => showFilter(e)}></i>
-          <h1 className="filt">Filters</h1>
-          <h2 className="categ">Categories</h2>
-          <div className="categorySearch">
-            <input
-              className="py-2 px-10 inputCateg"
-              type="text"
-              placeholder="Search Category"
-              onChange={(e) => {
-                setSeacrhTerm(e.target.value);
-              }}
-            />
-            <i className="fas fa-search fa-lg searchiconCat"></i>
-            <i class="fas fa-chevron-up upArr"></i>
-          </div>
-          <div className="category">
-            <input type="checkbox" className="checkboxIn" />
-            <label className="CatName">Javascript</label>
-          </div>
-          <div className="category">
-            <input type="checkbox" className="checkboxIn" />
-            <label className="CatName">Javascript</label>
-          </div>
-          <div className="category">
-            <input type="checkbox" className="checkboxIn" />
-            <label className="CatName">Javascript</label>
-          </div>
-          <div className="showMore">
-            <h1 className="mx-8 more">more ...</h1>
-          </div>
-        </div>
-        <div>
-          <h2 className="categ">Categories</h2>
-          <div className="categorySearch">
-            <input
-              className="py-2 px-10 inputCateg"
-              type="text"
-              placeholder="Search Category"
-              onChange={(e) => {
-                setSeacrhTerm(e.target.value);
-              }}
-            />
-            <i className="fas fa-search fa-lg searchiconCat"></i>
-            <i class="fas fa-chevron-up upArr"></i>
-          </div>
-          <div className="category">
-            <input type="checkbox" className="checkboxIn" />
-            <label className="CatName">Javascript</label>
-          </div>
-          <div className="category">
-            <input type="checkbox" className="checkboxIn" />
-            <label className="CatName">Javascript</label>
-          </div>
-          <div className="category">
-            <input type="checkbox" className="checkboxIn" />
-            <label className="CatName">Javascript</label>
-          </div>
-          <div className="showMore">
-            <h1 className="mx-8 more">more ...</h1>
-          </div>
-        </div>
-      </div>
-      <div className="courses">
-        <div>
-          <input
-            type="text"
-            placeholder="Search Learning"
-            onChange={(e) => {
-              setSeacrhTerm(e.target.value);
-            }}
-          />
-          <i className="fas fa-search fa-md searchicon"></i>
-        </div>
-        <div>
+      {/* <NavBar /> */}
+      {filter ? (
+        <div className={filter ? "filter" : "hideFilter"}>
           <div>
-            <img src={img2}></img>
-            <h1>Bootcamp on Python(from Scratch) for Beginners.</h1>
-            <h3>Category : Programming (Udemy)</h3>
-            <button>
-              <Link to="/enroll">Add Course</Link>
-            </button>
-            <span> 5 :</span>
+            <i class="fas fa-times fa-lg" onClick={(e) => showFilter(e)}></i>
+            <h1 className="filt">Filters</h1>
+            <h2 className="categ">Categories</h2>
+            <div className="categorySearch">
+              <input
+                className="py-2 px-10 inputCateg"
+                type="text"
+                placeholder="Search Category"
+                onChange={(e) => {
+                  setSeacrhTerm(e.target.value);
+                }}
+              />
+              <i className="fas fa-search fa-lg searchiconCat"></i>
+              <i class="fas fa-chevron-up upArr"></i>
+            </div>
+            <div className="category">
+              <input type="checkbox" className="checkboxIn" />
+              <label className="CatName">Javascript</label>
+            </div>
+            <div className="category">
+              <input type="checkbox" className="checkboxIn" />
+              <label className="CatName">Javascript</label>
+            </div>
+            <div className="category">
+              <input type="checkbox" className="checkboxIn" />
+              <label className="CatName">Javascript</label>
+            </div>
+            <div className="showMore">
+              <h1 className="mx-8 more">more ...</h1>
+            </div>
+          </div>
+          <div>
+            <h2 className="categ">Categories</h2>
+            <div className="categorySearch">
+              <input
+                className="py-2 px-10 inputCateg"
+                type="text"
+                placeholder="Search Category"
+                onChange={(e) => {
+                  setSeacrhTerm(e.target.value);
+                }}
+              />
+              <i className="fas fa-search fa-lg searchiconCat"></i>
+              <i class="fas fa-chevron-up upArr"></i>
+            </div>
+            <div className="category">
+              <input type="checkbox" className="checkboxIn" />
+              <label className="CatName">Javascript</label>
+            </div>
+            <div className="category">
+              <input type="checkbox" className="checkboxIn" />
+              <label className="CatName">Javascript</label>
+            </div>
+            <div className="category">
+              <input type="checkbox" className="checkboxIn" />
+              <label className="CatName">Javascript</label>
+            </div>
+            <div className="showMore">
+              <h1 className="mx-8 more">more ...</h1>
+            </div>
           </div>
         </div>
-      </div>
-      <Footer />
+      ) : (
+        <div>
+          <h1 className="popular">Popular Courses here:</h1>
+          <div className="inputs">
+            <div className="searchbox">
+              <input
+                type="text"
+                placeholder="Search Learning"
+                onChange={(e) => {
+                  setSeacrhTerm(e.target.value);
+                }}
+              />
+              <i className="fas fa-search fa-md searchicon"></i>
+            </div>
+            <button
+              className={filter ? "hideFilter" : ""}
+              onClick={(e) => showFilter(e)}
+            >
+              Filters
+            </button>
+          </div>
+
+          <div className="courses">
+            <div className="mainCard">
+              <div className="card">
+                <img src={img2}></img>
+                <h1 className="title">
+                  Bootcamp on Python(from Scratch) for Beginners.
+                </h1>
+                <h3 className="categoryText">Category : Programming (Udemy)</h3>
+
+                <h2> 5 :</h2>
+                <button>
+                  <Link to="/enroll">Add Course</Link>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+      {/* <Footer /> */}
     </>
   );
 };

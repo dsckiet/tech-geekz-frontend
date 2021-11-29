@@ -73,3 +73,34 @@
 .hideFilter {
   display: none;
 }
+
+.popular {
+  text-align: center;
+}
+
+.inputs {
+  display: flex;
+  justify-content: space-around;
+}
+
+.searchbox {
+  margin: 2rem 0;
+}
+.card {
+  padding: 0 1.5rem;
+}
+
+.categoryText {
+  font-size: 0.8rem;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.mainCard {
+  background-color: #f0f1f9;
+  padding: 1rem 0;
+  margin: 0 1rem;
+  border-radius: 1rem;
+}
