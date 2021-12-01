@@ -3,6 +3,7 @@ import NavBar from "./NavBar";
 import Footer from "./Footer";
 import img2 from "./img2.jpg";
 import { Link } from "react-router-dom";
+import "./progress.css";
 
 const progress = () => {
   return (
@@ -10,17 +11,52 @@ const progress = () => {
       {/* <NavBar /> */}
       {/* <Link to="/progressWatch"> */}
       <div>
-        <h1>Progress</h1>
-        <div>
-          <img src={img2}></img>
-          <h2>Python Bootcamp (from Scratch)</h2>
-          <div>
-            <label>
-              Completion: <span>70%</span>
-            </label>
-            <progress value="70" max="100"></progress>
+        <h1 className="Phead">Progress</h1>
+        <Link to="./progressWatch">
+          <div className="Pcard">
+            <img className="Pimg" src={img2}></img>
+            <h2 className="Ptitle">Python Bootcamp (from Scratch)</h2>
+            <div>
+              <label>
+                Completion: <span>70%</span>
+              </label>
+              <div className="progress">
+                <div className="progress__fill"></div>
+                <span className="progress__text"></span>
+              </div>
+            </div>
           </div>
-        </div>
+        </Link>
+        <Link to="./progressWatch">
+          <div className="Pcard">
+            <img className="Pimg" src={img2}></img>
+            <h2 className="Ptitle">Python Bootcamp (from Scratch)</h2>
+            <div>
+              <label>
+                Completion: <span>70%</span>
+              </label>
+              <div className="progress">
+                <div className="progress__fill"></div>
+                <span className="progress__text"></span>
+              </div>
+            </div>
+          </div>
+        </Link>
+        <Link to="./progressWatch">
+          <div className="Pcard">
+            <img className="Pimg" src={img2}></img>
+            <h2 className="Ptitle">Python Bootcamp (from Scratch)</h2>
+            <div>
+              <label>
+                Completion: <span>70%</span>
+              </label>
+              <div className="progress">
+                <div className="progress__fill"></div>
+                <span className="progress__text"></span>
+              </div>
+            </div>
+          </div>
+        </Link>
       </div>
       {/* </Link> */}
       {/* <Footer />s */}

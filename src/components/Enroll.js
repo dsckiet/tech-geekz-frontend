@@ -1,7 +1,6 @@
-import react from "react";
+import React from "react";
 import img2 from "./img2.jpg";
-import NavBar from "./NavBar";
-import Footer from "./Footer";
+import "./enroll.css";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -13,28 +12,34 @@ const Enroll = () => {
   };
   return (
     <>
-      <NavBar />
-      <div>
-        <img src={img2}></img>
-        <h1>Bootcamp on Python (from Scratch) for Beginners.</h1>
-        <h3>Category : Programming (Udemy)</h3>
-        <span>5:</span>
-        <i class="fas fa-share-alt"></i>
+      <div className="cardEnroll">
+        <img className="Eimg" src={img2}></img>
+        <h1 className="titleEnroll">
+          Bootcamp on Python (from Scratch) for Beginners.
+        </h1>
+        <h3 className="categTitle">Category : Programming (Udemy)</h3>
+        <h3 className="rating">5:</h3>
+
         {isEnroll ? (
-          <div>
-            <i class="far fa-check-circle"></i>
-            <span>enrolled</span>
-            <Link to="https://udemy.com">
-              <button>Go to course</button>
-            </Link>
+          <div className="">
+            <i class="far fa-check-circle circle"></i>
+            <span className="entext">enrolled</span>
+
+            <button className="gotoC">Go to course</button>
+            <i class="fas fa-share-alt share"></i>
           </div>
         ) : (
-          <button onClick={(e) => handleEnroll(e)}>Enroll</button>
+          <div>
+            <button className="enrollButt" onClick={(e) => handleEnroll(e)}>
+              Enroll
+            </button>
+            <i class="fas fa-share-alt share"></i>
+          </div>
         )}
       </div>
-      <div>
-        <h1>Description</h1>
-        <p>
+      <div className="descriptionEnroll">
+        <h1 className="DTitle">Description</h1>
+        <p className="Dpara">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -44,7 +49,6 @@ const Enroll = () => {
           culpa qui officia deserunt mollit anim id est laborum.
         </p>
       </div>
-      <Footer />
     </>
   );
 };

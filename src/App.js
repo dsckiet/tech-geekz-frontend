@@ -19,9 +19,9 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route exact path="/courses" component={courses} />
         <Route exact path="/progress" component={progress} />
-        {/* <Route exact path="/Qna" component={Qna} />
-          <Route exact path="/enroll" component={Enroll} />
-          <Route exact path="/progressWatch" component={progressWatch} /> */}
+        <Route exact path="/Qna" component={Qna} />
+        <Route exact path="/enroll" component={Enroll} />
+        <Route exact path="/progressWatch" component={progressWatch} />
       </Switch>
 
       <Footer />

@@ -1,8 +1,9 @@
 .navbar {
   background-color: #f9f9fa;
   justify-content: space-between;
-  padding: 0.3rem;
+  padding: 0.5rem;
   z-index: 3;
+  position: sticky;
 }
 
 .profile-dropdown {

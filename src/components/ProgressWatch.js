@@ -8,7 +8,6 @@ import Footer from "./Footer";
 const progressWatch = () => {
   return (
     <>
-      <NavBar />
       <div>
         <i class="fas fa-share-alt"></i>
         <img src={img2}></img>
@@ -22,7 +21,6 @@ const progressWatch = () => {
         <i class="far fa-check-circle"></i>
         <span>show in profile</span>
       </div>
-      <Footer />
     </>
   );
 };

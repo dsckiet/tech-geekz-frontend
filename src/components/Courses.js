@@ -107,16 +107,41 @@ const Courses = () => {
           <div className="courses">
             <div className="mainCard">
               <div className="card">
-                <img src={img2}></img>
+                <img className="Cimg" src={img2}></img>
                 <h1 className="title">
                   Bootcamp on Python(from Scratch) for Beginners.
                 </h1>
                 <h3 className="categoryText">Category : Programming (Udemy)</h3>
-
-                <h2> 5 :</h2>
-                <button>
+                <button className="enrollButt">
                   <Link to="/enroll">Add Course</Link>
                 </button>
+                <span> 5 :</span>
+              </div>
+            </div>
+            <div className="mainCard">
+              <div className="card">
+                <img className="Cimg" src={img2}></img>
+                <h1 className="title">
+                  Bootcamp on Python(from Scratch) for Beginners.
+                </h1>
+                <h3 className="categoryText">Category : Programming (Udemy)</h3>
+                <button className="enrollButt">
+                  <Link to="/enroll">Add Course</Link>
+                </button>
+                <span> 5 :</span>
+              </div>
+            </div>
+            <div className="mainCard">
+              <div className="card">
+                <img className="Cimg" src={img2}></img>
+                <h1 className="title">
+                  Bootcamp on Python(from Scratch) for Beginners.
+                </h1>
+                <h3 className="categoryText">Category : Programming (Udemy)</h3>
+                <button className="enrollButt">
+                  <Link to="/enroll">Add Course</Link>
+                </button>
+                <span> 5 :</span>
               </div>
             </div>
           </div>

@@ -59,16 +59,36 @@ function NavBar() {
         </div>
       </nav>
       <div className={sidebar ? "flex flex-col sidebar" : "sidebarHide"}>
-        <NavLink exact to="/" className="text-2xl">
+        <NavLink
+          onClick={(e) => showSidebar(e)}
+          exact
+          to="/"
+          className="text-2xl"
+        >
           Home
         </NavLink>
-        <NavLink exact to="/courses" className="text-2xl">
+        <NavLink
+          onClick={(e) => showSidebar(e)}
+          exact
+          to="/courses"
+          className="text-2xl"
+        >
           Courses
         </NavLink>
-        <NavLink exact to="/progress" className="text-2xl">
+        <NavLink
+          onClick={(e) => showSidebar(e)}
+          exact
+          to="/progress"
+          className="text-2xl"
+        >
           Progress
         </NavLink>
-        <NavLink exact to="/Qna" className="text-2xl">
+        <NavLink
+          onClick={(e) => showSidebar(e)}
+          exact
+          to="/Qna"
+          className="text-2xl"
+        >
           Qna
         </NavLink>
       </div>
