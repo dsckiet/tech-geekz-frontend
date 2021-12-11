@@ -40,7 +40,9 @@ function NavBar() {
           <div className={dropdown ? "inline-block dropdown" : "hide-dropdown"}>
             <div className="px-1 py-1">
               <i class="far fa-user-circle fa-md px-1"></i>
-              <Link className="tracking-wide px-1">Profile</Link>
+              <Link to="/profile" className="tracking-wide px-1">
+                Profile
+              </Link>
             </div>
             <div className="px-1 py-1.5">
               <i class="fas fa-cog fa-md px-1"></i>

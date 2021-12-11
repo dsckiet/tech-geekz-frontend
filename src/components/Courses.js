@@ -5,6 +5,7 @@ import { useState } from "react";
 import img2 from "./img2.jpg";
 import "./courses.css";
 import { Link } from "react-router-dom";
+import axios, { Axios } from "axios";
 
 const Courses = () => {
   const [searchTerm, setSeacrhTerm] = useState("");
@@ -12,6 +13,13 @@ const Courses = () => {
 
   const showFilter = (e) => {
     setFilter(!filter);
+  };
+
+  const getCourse = async (e) => {
+    let response = await axios.get(
+      "https://tech-geekz-backend.herokuapp.com/courses"
+    );
+    console.log(response);
   };
 
   return (
@@ -85,6 +93,7 @@ const Courses = () => {
       ) : (
         <div>
           <h1 className="popular">Popular Courses here:</h1>
+          <button onClick={(e) => getCourse(e)}>cby</button>
           <div className="inputs">
             <div className="searchbox">
               <input
