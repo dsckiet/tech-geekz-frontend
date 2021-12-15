@@ -1,8 +1,8 @@
 import React from "react";
-import insta from "./insta.svg";
-import twitter from "./twitter.svg";
-import linkedIn from "./linkedIn.svg";
-import github from "./github.svg";
+import insta from "../../utils/images/insta.svg";
+import twitter from "../../utils/images/twitter.svg";
+import linkedIn from "../../utils/images/linkedIn.svg";
+import github from "../../utils/images/github.svg";
 import { Link } from "react-router-dom";
 import "./footer.css";
 

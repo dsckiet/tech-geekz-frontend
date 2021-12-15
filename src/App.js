@@ -1,15 +1,15 @@
 import "./assets/main.css";
 import React from "react";
-import NavBar from "./components/NavBar";
-import Footer from "./components/Footer";
-import progress from "./components/Progress";
-import Qna from "./components/Qna";
-import courses from "./components/Courses";
-import Enroll from "./components/Enroll";
+import NavBar from "./components/Nav&Foot/NavBar";
+import Footer from "./components/Nav&Foot/Footer";
+import progress from "./components/Progress/Progress";
+import Qna from "./components/QnA/Qna";
+import courses from "./components/Courses/Courses";
+import Enroll from "./components/Courses/Enroll";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import progressWatch from "./components/ProgressWatch";
-import Home from "./components/Home";
-import Profile from "./components/Profile";
+import progressWatch from "./components/Progress/ProgressWatch";
+import Home from "./components/Home/Home";
+import Profile from "./components/Profile/Profile";
 
 function App() {
   return (

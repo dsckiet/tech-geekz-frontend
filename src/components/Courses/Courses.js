@@ -1,8 +1,7 @@
 import React from "react";
-import Footer from "./Footer";
-import NavBar from "./NavBar";
+
 import { useState } from "react";
-import img2 from "./img2.jpg";
+import img2 from "../../utils/images/img2.jpg";
 import "./courses.css";
 import { Link } from "react-router-dom";
 import axios, { Axios } from "axios";

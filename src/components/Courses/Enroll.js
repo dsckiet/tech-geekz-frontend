@@ -1,5 +1,5 @@
 import React from "react";
-import img2 from "./img2.jpg";
+import img2 from "../../utils/images/img2.jpg";
 import "./enroll.css";
 import { useState } from "react";
 import { Link } from "react-router-dom";

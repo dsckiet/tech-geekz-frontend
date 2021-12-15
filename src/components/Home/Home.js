@@ -1,6 +1,6 @@
 import React from "react";
-import homeImg from "./Kotlin Background.svg";
-import img2 from "./img2.jpg";
+import homeImg from "../../utils/images/Kotlin Background.svg";
+import img2 from "../../utils/images/img2.jpg";
 import { Link } from "react-router-dom";
 import "./home.css";
 

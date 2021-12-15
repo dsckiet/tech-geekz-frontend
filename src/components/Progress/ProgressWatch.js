@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import img2 from "./img2.jpg";
+import img2 from "../../utils/images/img2.jpg";
 import { Link } from "react-router-dom";
 import Cprogress from "./Cprogress";
 import "./progressWatch.css";

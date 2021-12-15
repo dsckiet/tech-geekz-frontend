@@ -1,7 +1,6 @@
 import React from "react";
-import NavBar from "./NavBar";
-import Footer from "./Footer";
-import img2 from "./img2.jpg";
+
+import img2 from "../../utils/images/img2.jpg";
 import { Link } from "react-router-dom";
 import "./progress.css";
 

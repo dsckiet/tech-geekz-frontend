@@ -1,7 +1,7 @@
 import React from "react";
-import sat from "./satyam_sharma.jpg";
+import sat from "../../utils/images/satyam_sharma.jpg";
 import "./profile.css";
-import img2 from "./img2.jpg";
+import img2 from "../../utils/images/img2.jpg";
 import { Link } from "react-router-dom";
 import { CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
