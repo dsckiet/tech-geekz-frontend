@@ -1,0 +1,39 @@
+.Phead {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.Pcard {
+  margin: 2rem 1rem;
+  padding: 1rem;
+  box-shadow: 0 2px 4px grey;
+  border-radius: 8px;
+}
+
+.Pimg {
+  box-shadow: 0 1px 4px grey;
+  border-radius: 4px;
+}
+
+.Ptitle {
+  margin: 1rem 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+.progress {
+  position: relative;
+  width: 200px;
+  height: 10px;
+  background: #d2d6ed;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.progress__fill {
+  width: 70%;
+  border-radius: 8px;
+  height: 100%;
+  background: #3b457b;
+  transition: all 0.2s;
+}

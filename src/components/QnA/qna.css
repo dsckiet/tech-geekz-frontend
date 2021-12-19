@@ -1,0 +1,49 @@
+.Qcircle {
+  width: 40px;
+  height: 40px;
+  background-color: whitesmoke;
+  margin: 3px;
+  border-radius: 50px;
+}
+
+.Qinfo {
+  display: flex;
+  margin: 1rem;
+}
+
+.Qcard {
+  background-color: #f0f1f9;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px grey;
+}
+
+.Qinput {
+  width: 100%;
+  padding: 5px;
+  border-radius: 1rem;
+  margin: 1rem 0;
+}
+
+.ans {
+  width: 90%;
+  padding: 5px 20px;
+  border-radius: 8px;
+}
+
+.send {
+  position: relative;
+  right: 2rem;
+  top: 10px;
+}
+
+.answer {
+  display: flex;
+  justify-content: center;
+}
+
+.Question {
+  margin: 0 1rem;
+  font-weight: bold;
+}
