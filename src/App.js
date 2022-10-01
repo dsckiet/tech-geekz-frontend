@@ -10,6 +10,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import progressWatch from "./components/Progress/ProgressWatch";
 import Home from "./components/Home/Home";
 import Profile from "./components/Profile/Profile";
+import CreateProfile from "./components/Profile/CreateProfile";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route exact path="/enroll" component={Enroll} />
         <Route exact path="/progressWatch" component={progressWatch} />
         <Route exact path="/profile" component={Profile} />
+        <Route exact path="/createProfile" component={CreateProfile} />
       </Switch>
 
       <Footer />
