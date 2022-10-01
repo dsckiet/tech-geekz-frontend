@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-
+import "./navbar.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
@@ -14,48 +14,30 @@ function NavBar() {
 
   return (
     <>
-      <nav
-        className="justify-between p-2 z-10 sticky flex"
-        style={{ backgroundColor: "#f9f9fa" }}
-      >
+      <nav className="navbar flex">
         {sidebar ? (
           <i
-            class="fas fa-times fa-lg relative top-1.5 left-2.5"
+            class="fas fa-times fa-lg Hamburger"
             onClick={(e) => showSidebar(e)}
           ></i>
         ) : (
-          <i
-            class="fas fa-bars relative top-1.5 left-2.5"
-            onClick={(e) => showSidebar(e)}
-          ></i>
+          <i class="fas fa-bars Hamburger" onClick={(e) => showSidebar(e)}></i>
         )}
         <h1>LOGO</h1>
         <div
-          className="rounded-3xl mx-1.5 flex"
-          style={{ backgroundColor: "#053063" }}
+          className="profile-dropdown flex"
           onClick={() => setDropdown(!dropdown)}
         >
-          <div
-            className=" m-1 rounded-full"
-            style={{ backgroundColor: "whitesmoke", minWidth: "1.5rem" }}
-          ></div>
-          <div className="text-m text-white p-1">profile</div>
+          <div className="circle"></div>
+          <div className="text-m profile px-1">profile</div>
           <i
             class={
               dropdown
-                ? "fas fa-sort-down fa-md text-white"
-                : "fas fa-sort-down fa-md text-white"
+                ? "fas fa-sort-down fa-md icon"
+                : "fas fa-sort-down fa-md icon"
             }
-            style={{ padding: "6px 10px 4px 5px" }}
           ></i>
-          <div
-            className={
-              dropdown
-                ? "inline-block rounded-2xl p-3 absolute right-10  top-12 text-white"
-                : "hidden"
-            }
-            style={{ backgroundColor: "#053063", zIndex: "-1" }}
-          >
+          <div className={dropdown ? "inline-block dropdown" : "hide-dropdown"}>
             <div className="px-1 py-1">
               <i class="far fa-user-circle fa-md px-1"></i>
               <Link to="/profile" className="tracking-wide px-1">
@@ -72,25 +54,13 @@ function NavBar() {
             </div>
             <div className="p-1">
               <Link>
-                <button
-                  className="bg-white-500 text-base ronded-full py-0.5 px-3.5 m-1.5"
-                  style={{ backgroundColor: "lightseagreen" }}
-                >
-                  SignUp
-                </button>
+                <button className="bg-white-500 login">SignUp</button>
               </Link>
             </div>
           </div>
         </div>
       </nav>
-      <div
-        className={
-          sidebar
-            ? "flex flex-col text-white w-full min-h-screen justify-evenly text-center"
-            : "hidden"
-        }
-        style={{ backgroundColor: "#053063" }}
-      >
+      <div className={sidebar ? "flex flex-col sidebar" : "sidebarHide"}>
         <NavLink
           onClick={(e) => showSidebar(e)}
           exact
