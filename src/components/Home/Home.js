@@ -47,7 +47,9 @@ const Home = () => {
         </div>
       </div>
       <div className="my-8">
-        <h1 className="text-xl font-bold">Most Recommended Courses</h1>
+        <h1 className="text-2xl font-bold text-center">
+          Most Recommended Courses
+        </h1>
         <div className="flex overflow-x-scroll">
           <div
             className="p-4 my-6 mx-4 rounded"
@@ -133,10 +135,10 @@ const Home = () => {
         </div>
       </div>
       <div className="my-8">
-        <h1 className="text-xl font-bold">Most Recent Courses</h1>
+        <h1 className="text-2xl font-bold text-center">Most Recent Courses</h1>
         <div className="flex overflow-x-scroll">
           <div
-            className="p-4 my-6 mx-4 rounded"
+            className="p-4 my-8 mx-4 rounded"
             style={{
               backgroundColor: "#f0f1f9",
               boxShadow: "0 2px 4px grey",
@@ -163,7 +165,7 @@ const Home = () => {
             </div>
           </div>
           <div
-            className="p-4 my-6 mx-4 rounded"
+            className="p-4 my-8 mx-4 rounded"
             style={{
               backgroundColor: "#f0f1f9",
               boxShadow: "0 2px 4px grey",
@@ -190,7 +192,7 @@ const Home = () => {
             </div>
           </div>
           <div
-            className="p-4 my-6 mx-4 rounded"
+            className="p-4 my-8 mx-4 rounded"
             style={{
               backgroundColor: "#f0f1f9",
               boxShadow: "0 2px 4px grey",
