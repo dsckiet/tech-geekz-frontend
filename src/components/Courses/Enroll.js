@@ -25,7 +25,7 @@ const Enroll = () => {
           style={{ backgroundColor: "#f0f1f9", boxShadow: "0 2px 4px grey" }}
         >
           <img
-            className="rounded"
+            className="rounded m-8"
             style={{ boxShadow: "0 1px 4px grey" }}
             src={img2}
           ></img>
@@ -36,12 +36,12 @@ const Enroll = () => {
             <h3 className="m-1.5">{Math.round((q.rating * 10) / 10)}:</h3> */}
 
           {isEnroll ? (
-            <div className="">
+            <div className="m-8">
               <i class="far fa-check-circle bg-green"></i>
-              <span className="m-0.5">enrolled</span>
+              <span className="m-0.5 text-green">enrolled</span>
 
               <button
-                className="text-white m-2.5 py-1.5 px-1.5 rounded-md text-xs"
+                className="text-white m-2.5 py-4 px-12 rounded-full text-xs"
                 style={{ backgroundColor: "#4c589e" }}
               >
                 Go to course
@@ -49,9 +49,9 @@ const Enroll = () => {
               <i class="fas fa-share-alt share"></i>
             </div>
           ) : (
-            <div>
+            <div className="m-8">
               <button
-                className="text-white my-1.5 py-1.5 px-1.5 rounded-md"
+                className="text-white my-1.5 py-4 px-12 rounded-full"
                 style={{ backgroundColor: "#4c589e" }}
                 onClick={(e) => handleEnroll(e)}
               >
