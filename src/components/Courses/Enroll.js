@@ -44,7 +44,9 @@ const Enroll = () => {
                 className="text-white m-2.5 py-4 px-12 rounded-full text-xs"
                 style={{ backgroundColor: "#4c589e" }}
               >
-                Go to course
+                <a href="https://www.udemy.com/" target="#">
+                  Go to course
+                </a>
               </button>
               <i class="fas fa-share-alt share"></i>
             </div>
@@ -68,7 +70,7 @@ const Enroll = () => {
           >
             Description
           </h1>
-          <p className="py-1">
+          <p className="py-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
