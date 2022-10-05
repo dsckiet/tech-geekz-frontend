@@ -124,7 +124,7 @@ const Courses = () => {
           {/* <button onClick={(e) => getCourse(e)}>cby</button> */}
           <div className="flex justify-around">
             <div
-              className="my-8 py-1.5 px-2.5"
+              className="my-8 py-1.5 px-4 rounded-lg"
               style={{ boxShadow: "0px 2px 4px #00000025" }}
             >
               <input

@@ -29,7 +29,7 @@ function NavBar() {
             onClick={(e) => showSidebar(e)}
           ></i>
         )}
-        <h1>LOGO</h1>
+        <h1 className="font-bold">TechGeekz</h1>
         <div
           className="rounded-3xl mx-1.5 flex"
           style={{ backgroundColor: "#053063" }}
