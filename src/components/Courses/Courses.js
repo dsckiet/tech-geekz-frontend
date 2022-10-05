@@ -40,17 +40,17 @@ const Courses = () => {
           className={filter ? "py-0 px-2.5" : "hidden"}
           style={{ backgroundColor: "#ebf2ff" }}
         >
-          <div>
+          <div className="p-4">
             <i class="fas fa-times fa-lg" onClick={(e) => showFilter(e)}></i>
             <h1
-              className="text-4xl"
+              className="text-4xl m-4"
               style={{ borderBottom: "5px solid #3b457b" }}
             >
               Filters
             </h1>
-            <h2 className="text-xl my-5">Categories</h2>
+            <h2 className="text-xl m-4">Categories</h2>
             <div
-              className="categorySearch"
+              className="categorySearch m-4"
               style={{ borderBottom: "2px solid #4c589e" }}
             >
               <input
@@ -65,24 +65,24 @@ const Courses = () => {
               <i className="fas fa-search fa-lg relative right-64"></i>
               <i class="fas fa-chevron-up relative"></i>
             </div>
-            <div className="my-1">
+            <div className="m-4">
               <input type="checkbox" className="scale-200" />
               <label className="text-xl px-4">Javascript</label>
             </div>
-            <div className="my-4">
+            <div className="m-4">
               <input type="checkbox" className="scale-200" />
-              <label className="text-xl px-4">Javascript</label>
+              <label className="text-xl px-4">HTML</label>
             </div>
-            <div className="my-4">
+            <div className="m-4">
               <input type="checkbox" className="scale-200" />
-              <label className="text-xl px-4">Javascript</label>
+              <label className="text-xl px-4">CSS</label>
             </div>
             <div className="py-4 text-center">
               <h1 className="mx-8 more">more ...</h1>
             </div>
           </div>
-          <div>
-            <h2 className="text-xl my-5">Categories</h2>
+          <div className="p-4">
+            <h2 className="text-xl m-5">Categories</h2>
             <div
               className="categorySearch"
               style={{ borderBottom: "2px solid #4c589e" }}
@@ -99,17 +99,17 @@ const Courses = () => {
               <i className="fas fa-search fa-lg relative right-64"></i>
               <i class="fas fa-chevron-up relative"></i>
             </div>
-            <div className="my-1">
+            <div className="m-4">
               <input type="checkbox" className="scale-200" />
-              <label className="text-xl px-4">Javascript</label>
+              <label className="text-xl px-4">Angular</label>
             </div>
-            <div className="my-4">
+            <div className="m-4">
               <input type="checkbox" className="scale-200" />
-              <label className="text-xl px-4">Javascript</label>
+              <label className="text-xl px-4">Vue</label>
             </div>
-            <div className="my-4">
+            <div className="m-4">
               <input type="checkbox" className="scale-200" />
-              <label className="text-xl px-4">Javascript</label>
+              <label className="text-xl px-4">React</label>
             </div>
             <div className="py-4 text-center">
               <h1 className="mx-8 more">more ...</h1>
